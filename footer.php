@@ -12,20 +12,31 @@
 ?>
 
 	</div><!-- #content -->
-
+	<?php
+	$server_host = $_SERVER[HTTP_HOST];
+	$server_reqscheme = $_SERVER[REQUEST_SCHEME];
+	?>
 	<footer id="colophon" class="site-footer">
 		<div class="site-columns">
 			<div class="left">
-				<img src="http://155.138.196.218/wp-content/uploads/2019/07/footer-main-logo.png" />
+				<img src="<?php
+					echo $server_reqscheme . '://' . $server_host . '/wp-content/uploads/2019/10/footer-main-logo.png'
+				?>"/>
 				<div class="social">
-					<a href="https://www.google.com">
-						<img src="http://155.138.196.218/wp-content/uploads/2019/07/social-facebook.png">
+					<a href="https://www.facebook.com/YIMBYDemocratsSD/" target="_blank" rel="noopener noreferrer">
+						<img src="<?php
+							echo $server_reqscheme . '://' . $server_host . '/wp-content/uploads/2019/10/social-facebook.png'
+						?>" />
 					</a>
-					<a href="https://www.google.com">
-						<img src="http://155.138.196.218/wp-content/uploads/2019/07/social-twitter.png">
+					<a href="https://twitter.com/YIMBYDemsSD" target="_blank" rel="noopener noreferrer" >
+						<img src="<?php
+							echo $server_reqscheme . '://' . $server_host . '/wp-content/uploads/2019/10/social-twitter.png'
+						?>" />
 					</a>
-					<a href="https://www.google.com">
-						<img src="http://155.138.196.218/wp-content/uploads/2019/07/social-instagram.png">
+					<a href="https://www.instagram.com/yimbydemssd/" target="_blank" rel="noopener noreferrer" >
+						<img src="<?php
+						echo $server_reqscheme . '://' . $server_host . '/wp-content/uploads/2019/10/social-instagram.png'
+						?>" />
 					</a>
 				</div>
 			</div>
