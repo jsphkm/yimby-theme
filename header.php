@@ -45,19 +45,23 @@
 				</button>
 			</div>
 			<div id="topmenu">
-				<div class="topmenu-inner">
-					<?php
-					wp_nav_menu( array(
-						'theme_location' => 'menu-1',
-						'menu_id'        => 'primary-menu',
-						) );
-					?>
-					</div>
+				<?php
+				wp_nav_menu( array(
+					'theme_location' => 'menu-1',
+					'menu_id'        => 'primary-menu',
+					) );
+				?>
 			</div>
 			<div id="sidemenu">
 				<div class="logo-container">
 					<a class="custom-logo-link white-logo-link" href="/" rel="home">
-						<img class="custom-logo" src="http://155.138.196.218/wp-content/uploads/2019/07/footer-main-logo.png" alt="Yimby" width="240" height="205" />
+						<?php
+						$server_reqscheme = $_SERVER[REQUEST_SCHEME];
+						$server_host = $_SERVER[HTTP_HOST];
+						?>
+						<img class="custom-logo" src="<?php
+						echo $server_reqscheme . '://' . $server_host . '/wp-content/uploads/2019/10/footer-main-logo.png'
+						?>" alt="Yimby" width="240" height="205" />
 					</a>
 				</div>
 				<?php
@@ -66,6 +70,23 @@
 					'menu_id'        => 'primary-menu',
 				) );
 				?>
+				<div class="social">
+					<a href="https://www.facebook.com/YIMBYDemocratsSD/" target="_blank" rel="noopener noreferrer">
+						<img src="<?php
+							echo $server_reqscheme . '://' . $server_host . '/wp-content/uploads/2019/10/social-facebook.png'
+						?>" />
+					</a>
+					<a href="https://twitter.com/YIMBYDemsSD" target="_blank" rel="noopener noreferrer" >
+						<img src="<?php
+							echo $server_reqscheme . '://' . $server_host . '/wp-content/uploads/2019/10/social-twitter.png'
+						?>" />
+					</a>
+					<a href="https://www.instagram.com/yimbydemssd/" target="_blank" rel="noopener noreferrer" >
+						<img src="<?php
+						echo $server_reqscheme . '://' . $server_host . '/wp-content/uploads/2019/10/social-instagram.png'
+						?>" />
+					</a>
+				</div>
 			</div>
 		</nav><!-- #site-navigation -->
 

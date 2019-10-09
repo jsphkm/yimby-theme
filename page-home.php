@@ -61,9 +61,16 @@ get_header();
 			<div class="engagementlinks-container">
 				<ul>
 				<?php
+				$links = [
+					"home-subscribe" => "javascript: document.body.scrollIntoView({ behavior: 'smooth', block: 'end' })",
+					"home-attend" => "/calendar",
+					"home-member" => "https://secure.actblue.com/donate/yimbydems",
+				];
 				foreach($engagement_links as $engagement_link) {
+					// print_r($engagement_link);
+					$each_title = $engagement_link[image][title];
 					echo '<li>';
-						echo '<a href="">';
+						echo '<a href="' . $links[$each_title] . '" >';
 							echo '<img src="' . $engagement_link[image][sizes][thumbnail] . '" />';
 							echo '<div class="divider"></div>';
 							echo '<h3>' . $engagement_link[text] . '</h3>';

@@ -13,8 +13,8 @@
 
 	</div><!-- #content -->
 	<?php
-	$server_host = $_SERVER[HTTP_HOST];
 	$server_reqscheme = $_SERVER[REQUEST_SCHEME];
+	$server_host = $_SERVER[HTTP_HOST];
 	?>
 	<footer id="colophon" class="site-footer">
 		<div class="site-columns">
