@@ -1,0 +1,122 @@
+.site-footer {
+  background-color: #323232;
+  color: white;
+  padding: 20px;
+
+  .site-columns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+
+    @include media(tablet) {
+      flex-direction: row;
+    }
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      margin-bottom: 15px;
+
+      @include media(tablet) {
+        margin-bottom: 0;
+      }
+
+      & > img {
+        height: 90px;
+        margin-bottom: 15px;
+        margin-top: 20px;
+
+        @include media(tablet) {
+          height: 120px;
+          margin-top: 0;
+        }
+      }
+
+      .social {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        a {
+          border: 1px solid #1BAD8B;
+          border-radius: 30px;
+          width: 30px;
+          height: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 7px;
+
+          @include media(tablet) {
+            width: 38px;
+            height: 38px;
+          }
+
+          img {
+            height: 14px;
+
+            @include media(tablet) {
+              height: 17px;
+            }
+          }
+        }
+      }
+    }
+
+    .right {
+      max-width: 100%;
+      margin: 0 auto;
+      flex: 1;
+
+      @include media(tablet) {
+        margin: 0;
+      }
+      
+      h3 {
+        font-size: 1rem;
+
+        @include media(tablet) {
+          font-size: 1.2rem;
+        }
+      }
+
+      .wpcf7 {
+        font-size: 0.8rem;
+
+
+        input {
+          max-width: 100%;
+          background-color: transparent;
+          border: 1px solid #555;
+          color: white;
+          padding: 3px 5px;
+        }
+
+        input:focus {
+          border: 1px solid #999;
+        }
+
+        input[type="submit"] {
+          color: white;
+          background-color: #1BAD8B;
+          border-radius: 3px;
+          padding: 7px 20px;
+          border: 0;
+          font-size: 0.9rem;
+        }
+
+        .wpcf7-checkbox {
+          .wpcf7-list-item {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}

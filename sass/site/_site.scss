@@ -1,0 +1,37 @@
+// @import "../layout/content-sidebar";
+// @import "../layout/sidebar-content";
+
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+@import "primary/posts-and-pages";
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+@import "primary/comments";
+
+
+/*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+@import "header/site-header";
+@import "header/site-featured-image";
+
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+@import "footer/site-footer";
+
+
+/*--------------------------------------------------------------
+## Pages and Posts Templates
+--------------------------------------------------------------*/
+@import "templates/pages/home";
+@import "templates/pages/about";
+@import "templates/pages/news";
+@import "templates/pages/resources";
+@import "templates/pages/calendar";
+@import "templates/pages/committees";
+@import "templates/pages/endorsements";
+@import "templates/pages/blog";

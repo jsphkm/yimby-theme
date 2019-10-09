@@ -1,0 +1,231 @@
+// Site header
+.site-header {
+  padding: 0.7rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+
+  @media (min-width: 600px) {
+    flex-direction: row
+  }
+
+  #spacer {
+    flex: 1;
+
+    @media (min-width: 600px) {
+      display: none;
+    }
+  }
+
+  .site-branding {
+    width: 70px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+
+    @media (min-width: 600px) {
+      flex: initial;
+    } 
+
+    @include media(desktop) {
+      width: 100px;
+    }
+
+    .custom-logo-link {
+      display: flex;
+      justify-content: center;
+      width: 61px;
+      height: 52px;
+
+      @media (min-width: 600px) {
+        width: 72px;
+        height: 62px;
+      }
+      
+      @include media(desktop) {
+        width: 93px;
+        height: 80px;
+      }
+    }
+  }
+
+  .main-navigation {
+    flex: 1;
+    z-index: 1;
+
+    @media (min-width: 600px) {
+      flex: initial;
+    }
+
+    #overlay {
+      visibility: hidden;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transition-property: opacity;
+      transform: translateZ(0);
+      transition-duration: 200ms;
+      height: 100vh;
+      width: 100vw;
+      z-index: 1;
+      background: rgba(0,0,0,0.5);
+    }
+
+    #hamburger {
+      button {
+        padding: 10px;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+
+        span {
+          display: block;
+          width: 20px;
+          height: 3px;
+          position: relative;
+          background: #323232;
+          border-radius: 3.6px;
+          transition: transform 0.2s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+            background 0.2s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+            opacity 0.2s ease;
+        }
+
+        span:nth-last-child(2) {
+          margin-top: 3px;
+          margin-bottom: 3px;
+        }
+      }
+    }
+
+    &.toggled {
+      #hamburger {
+        span {
+          background: white;
+          transition: background 0.2s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+        }
+      }
+      #topmenu {
+        display: none;
+      }
+      
+      #sidemenu {
+        transform: translate3d(0, 0, 0);
+        transition-duration: 200ms;
+        
+        .current-menu-item a,
+        .current-page-item a {
+          color: #1BAD8B;
+        }
+
+        a {
+          color: white;
+
+          :hover,
+          :active,
+          :focus {
+            color: #1BAD8B;
+          }
+        }
+      }
+    }
+
+    #sidemenu {
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      // max-width: 256px;
+      transition-property: transform;
+      background-color: #0073A3;
+      transform: translate3d(-100%, 0, 0);
+      transition-duration: 200ms;
+
+      .logo-container {
+        display: flex;
+        justify-content: center;
+        
+        .white-logo-link {
+          padding: 10px;
+          
+          img {
+            width: 60px;
+          }
+        }
+      }
+
+      .topmenu-inner {
+        margin-top: 50px;
+        
+        #primary-menu {
+          display: flex;
+          // align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          height: 100%;
+          margin-left: 16px;
+
+          li {
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+body {
+  &.fixed {
+    overflow: hidden;
+    // position: fixed;
+    height: 100%;
+  }
+}
+
+// Site navigation
+.site-navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+// Menu items
+.menu-item {
+  padding: 0 10px;
+  font-weight: 700;
+
+  @include media(desktop) {
+    padding: 0 20px;
+  }
+
+  &.current-menu-item a,
+  &.current-page-item a {
+    color: #1BAD8B;
+  }
+
+  a {
+    color: #323232;
+    transition: color 0.2s ease;
+    font-size: 14px;
+
+    @include media(desktop) {
+      font-size: 16px;
+    }
+  }
+
+  a:hover,
+  a:active,
+  a:focus {
+    color: #1BAD8B;
+  }
+}
