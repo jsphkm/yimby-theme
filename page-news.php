@@ -63,9 +63,11 @@ get_header();
           echo '<li class="article-item">';
             echo '<small class="article-publication">' . $article_publication . '</small>';
             echo '<div class="article-date">' . $article_date . '</div>';
-            echo '<h3 class="article-title">' . $article_title . '</h3>';
+            echo '<a class="article-link" target="_blank" href=' . $article_link . ' rel="noopener noreferrer">';
+              echo '<h3 class="article-title">' . $article_title . '</h3>';
+            echo '</a>';
             echo $article_description;
-            echo '<a class="article-link" target="_blank" href=' . $article_link . ' rel="noopener noreferrer">Read Article</a>';
+            // echo '<a class="article-link" target="_blank" href=' . $article_link . ' rel="noopener noreferrer">Read Article</a>';
           echo '</li>';
         }
         ?>

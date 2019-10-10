@@ -126,7 +126,7 @@ get_header();
 						$endorsements_title = $endorsements[title];
 						$endorsements_description = $endorsements[description];
 						echo '<img src="' . $endorsements_image . '" />';
-						echo '<h2>' . $endorsements[title] . '</h2>';
+						echo '<h2>' . $endorsements_title . '</h2>';
 						echo '<p>' . $endorsements_description . '</p>';
 						echo '<a class="endorsements-link" href="/endorsements">OUR ENDORSEMENTS</a>'
 					?>
