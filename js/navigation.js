@@ -40,8 +40,8 @@
       container.className = container.className.replace(' toggled', '');
       button.setAttribute('aria-expanded', 'false');
       menu.setAttribute('aria-expanded', 'false');
-			bodyEl.classList.toggle('fixed');
-			window.removeEventListener('touchmove', e => e.preventDefault(), false);
+      bodyEl.classList.toggle('fixed');
+      window.removeEventListener('touchmove', e => e.preventDefault(), false);
     } else {
       container.className += ' toggled';
       button.setAttribute('aria-expanded', 'true');
@@ -53,6 +53,12 @@
       window.addEventListener('touchmove', e => e.preventDefault(), false);
     }
   };
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 600) {
+      container.className = container.className.replace(' toggled', '');
+    }
+  });
 
   // Get all the link elements within the menu.
   links = menu.getElementsByTagName('a');

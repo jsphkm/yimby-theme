@@ -1033,13 +1033,14 @@ a:hover, a:active {
   justify-content: center;
   flex-direction: column;
   height: 100%;
-  margin: 15px 0 0 0;
+  margin: 24px 0 24px 0;
 }
 .site-header .main-navigation #sidemenu #primary-menu li {
-  margin-bottom: 28px;
+  margin-bottom: 14px;
 }
 .site-header .main-navigation #sidemenu #primary-menu li a {
   font-size: 16px;
+  color: white;
 }
 .site-header .main-navigation #sidemenu .social {
   display: flex;
@@ -1509,6 +1510,46 @@ body.fixed {
   .homepage .definition-container .definition-columns .right {
     font-size: 1rem;
   }
+}
+.homepage .fbendorsement-container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 1200px;
+}
+@media only screen and (min-width: 700px) {
+  .homepage .fbendorsement-container {
+    flex-direction: row;
+  }
+}
+.homepage .fbendorsement-container .left {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+.homepage .fbendorsement-container .right {
+  flex: 1;
+  margin-left: 0;
+}
+@media only screen and (min-width: 700px) {
+  .homepage .fbendorsement-container .right {
+    margin-left: 20px;
+  }
+}
+.homepage .fbendorsement-container .right h2 {
+  color: #0073A3;
+}
+.homepage .fbendorsement-container .right .endorsements-link, .homepage .fbendorsement-container .right .endorsements-link:visited {
+  padding: 10px 25px;
+  color: white;
+  background-color: #1BAD8B;
+  border-radius: 3px;
+  text-decoration: none;
 }
 
 .aboutpage .hero-description-container {

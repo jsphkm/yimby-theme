@@ -14,10 +14,10 @@ get_header();
 				
 				$hero_array;
 				$advocate_array;
-				$facebook_array;
 
 				$post = get_post();
-				if ( has_blocks($post->post_content )) {
+
+				if (has_blocks($post->post_content )) {
 					$blocks = parse_blocks( $post->post_content );
 					foreach($blocks as $block) {
 						$innerhtml_array = [];
@@ -35,8 +35,6 @@ get_header();
 							case 'advocate-text':
 								$advocate_array = $innerhtml_array;
 								break;
-							case 'facebook-embed';
-								$facebook_array = $innerhtml_array;
 						}
 					}
 				}
@@ -46,13 +44,11 @@ get_header();
 				"
 			>
 				<div class="wp-block-cover__inner-container hero-description">
-					<!-- <p class="has-large-font-size" style="text-align: center"> -->
-						<?php
-							foreach($hero_array as $hero_each) {
-								echo $hero_each;
-							};
-						?>
-					<!-- </p> -->
+					<?php
+						foreach($hero_array as $hero_each) {
+							echo $hero_each;
+						};
+					?>
 				</div>
 			</div>
 			<?php
@@ -67,7 +63,6 @@ get_header();
 					"home-member" => "https://secure.actblue.com/donate/yimbydems",
 				];
 				foreach($engagement_links as $engagement_link) {
-					// print_r($engagement_link);
 					$each_title = $engagement_link[image][title];
 					echo '<li>';
 						echo '<a href="' . $links[$each_title] . '" >';
@@ -116,9 +111,27 @@ get_header();
 					</div>
 				</div>
 			</div>
-			<?php
-				print_r($facebook_array);
-			?>
+			<!-- Facebook script -->
+			<div id="fb-root"></div>
+			<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0&appId=2473156899395443&autoLogAppEvents=1"></script>
+			<div class="fbendorsement-container">
+				<div class="left">
+					<!-- Facebook embed -->
+					<div class="fb-page" data-href="https://www.facebook.com/YIMBYDemocratsSD/?epa=SEARCH_BOX" data-tabs="timeline" data-width="500" data-height="900" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/YIMBYDemocratsSD/?epa=SEARCH_BOX" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/YIMBYDemocratsSD/?epa=SEARCH_BOX">YIMBY Democrats of San Diego County</a></blockquote></div>
+				</div>
+				<div class="right">
+					<?php
+						$endorsements = get_field('endorsements');
+						$endorsements_image = $endorsements[image];
+						$endorsements_title = $endorsements[title];
+						$endorsements_description = $endorsements[description];
+						echo '<img src="' . $endorsements_image . '" />';
+						echo '<h2>' . $endorsements[title] . '</h2>';
+						echo '<p>' . $endorsements_description . '</p>';
+						echo '<a class="endorsements-link" href="/endorsements">OUR ENDORSEMENTS</a>'
+					?>
+				</div>
+			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

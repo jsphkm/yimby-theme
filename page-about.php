@@ -99,8 +99,6 @@ get_header();
               echo '<img src="' . $board_member[image][sizes][thumbnail] . '" />';
               echo '<h3>' . $board_member[name] . '</h3>';
               echo '<small>' . $board_member[title] . '</small>';
-              // $firstfewwords = implode(' ', array_slice(str_word_count($board_member[bio], 1, '~`!@#$%^&*()_-\'[]\{}|;:",./<>?'), 0, 25));
-              // echo '<p>' . $firstfewwords . '...' . '</p>';
               echo '</li>';
             };
             ?>

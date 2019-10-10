@@ -65,7 +65,7 @@ get_header();
             echo '<div class="article-date">' . $article_date . '</div>';
             echo '<h3 class="article-title">' . $article_title . '</h3>';
             echo $article_description;
-            echo '<a class="article-link" target="_blank" href=' . $article_link . '>Read Article</a>';
+            echo '<a class="article-link" target="_blank" href=' . $article_link . ' rel="noopener noreferrer">Read Article</a>';
           echo '</li>';
         }
         ?>

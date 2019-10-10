@@ -169,13 +169,14 @@
         justify-content: center;
         flex-direction: column;
         height: 100%;
-        margin: 15px 0 0 0;
+        margin: 24px 0 24px 0;
         
         li {
-          margin-bottom: 28px;
+          margin-bottom: 14px;
 
           a {
             font-size: 16px;
+            color: white;
           }
         }
       }

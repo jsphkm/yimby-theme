@@ -36,6 +36,7 @@
 			?>
 		</div><!-- .site-branding -->
 
+		</script>
 		<nav id="site-navigation" class="main-navigation">
 			<div id="hamburger">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
