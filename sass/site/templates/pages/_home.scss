@@ -24,7 +24,7 @@
     justify-content: center;
     align-items: center;
     // margin: 20px 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     
     @include media(tablet) {
       // margin: 50px 20px;
@@ -150,7 +150,7 @@
       max-width: 1200px;
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       font-family: 'Arial', sans-serif;
 
       @include media(tablet) {
@@ -201,6 +201,25 @@
         h2 {
           color: #0073A3;
           font-family: 'Montserrat';
+        }
+
+        a.about-link {
+          color: white;
+          background-color: #1BAD8B;
+          padding: 10px 25px;
+          border-radius: 3px;
+          text-decoration: none;
+          font-size: 12px;
+          font-family: 'Montserrat';
+          display: inline-block;
+
+          @include media(tablet) {
+            font-size: 14px;
+          }
+  
+          @include media(desktop) {
+            font-size: 16px;
+          }
         }
       }
     }
@@ -315,14 +334,46 @@
 
       h2 {
         color: #0073A3;
+        margin: 10px 0;
+
+        @include media(tablet) {
+          margin: 12px 0;
+        }
+
+        @include media(desktop) {
+          margin: 14px 0;
+        }
       }
 
-      .endorsements-link, .endorsements-link:visited {
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        margin: 10px 0;
+
+        @include media(tablet) {
+          font-size: 16px;
+        }
+
+        @include media(desktop) {
+          font-size: 18px;
+        }
+      }
+
+      a.endorsements-link, a.endorsements-link:visited {
         padding: 10px 25px;
         color: white;
         background-color: #1BAD8B;
         border-radius: 3px;
         text-decoration: none;
+        font-size: 12px;
+
+        @include media(tablet) {
+          font-size: 14px;
+        }
+
+        @include media(desktop) {
+          font-size: 16px;
+        }
       }
     }
   }

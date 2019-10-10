@@ -5,6 +5,9 @@
 
 get_header();
 ?>
+	<!-- Facebook script -->
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0&appId=2473156899395443&autoLogAppEvents=1"></script>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main homepage">
@@ -93,6 +96,7 @@ get_header();
 								echo $advocate_each;
 							}
 						?>
+						<a class="about-link" href="/about">ABOUT YIMBY DEMS SD</a>
 					</div>
 				</div>
 			</div>
@@ -111,9 +115,6 @@ get_header();
 					</div>
 				</div>
 			</div>
-			<!-- Facebook script -->
-			<div id="fb-root"></div>
-			<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0&appId=2473156899395443&autoLogAppEvents=1"></script>
 			<div class="fbendorsement-container">
 				<div class="left">
 					<!-- Facebook embed -->
@@ -128,7 +129,7 @@ get_header();
 						echo '<img src="' . $endorsements_image . '" />';
 						echo '<h2>' . $endorsements_title . '</h2>';
 						echo '<p>' . $endorsements_description . '</p>';
-						echo '<a class="endorsements-link" href="/endorsements">OUR ENDORSEMENTS</a>'
+						echo '<a class="endorsements-link" href="/endorsements">OUR ENDORSEMENTS</a>';
 					?>
 				</div>
 			</div>
