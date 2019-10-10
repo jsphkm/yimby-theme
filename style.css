@@ -2070,7 +2070,7 @@ body.fixed {
   color: #404040;
 }
 .newspage .articles-list ul li.article-item .article-link:hover, .newspage .articles-list ul li.article-item .article-link:focus {
-  text-decoration: underline;
+  color: #1BAD8B;
 }
 .newspage .articles-list ul li.article-item .article-link .article-title {
   font-size: 18px;
