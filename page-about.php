@@ -61,6 +61,7 @@ get_header();
               echo $hero_each;
             };
             ?>
+            <a href="javascript: document.getElementById('board-container').scrollIntoView({ behavior: 'smooth' })">MEET THE YIMBY DEM TEAM</a>
           </div>
         </div>
       </div>
@@ -80,7 +81,7 @@ get_header();
           ?>
         </div>
       </div>
-      <div class="board-container">
+      <div id="board-container" class="board-container">
         <div class="wp-block-cover about-team">
           <?php
           foreach($team_header_array as $team_header) {

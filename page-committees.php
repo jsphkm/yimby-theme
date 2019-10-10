@@ -37,6 +37,9 @@ get_header();
             print_r($committees_header);
           }
           ?>
+          <a href="mailto:yimbydemssd@gmail.com?Subject=YIMBY%20Committees" target="_top">
+            Message YIMBY Dems SD
+          </a>
         </div>
       </div>
       <div class="committees-list">
@@ -47,7 +50,7 @@ get_header();
           $article_title = $committees_article[title];
           $article_description = $committees_article[description];
           echo '<li>';
-            echo '<div class="right">';
+            echo '<div class="list-inner">';
               echo '<h2>' . $article_title . '</h2>';
               echo '<p>' . $article_description . '</p>';
             echo '</div>';

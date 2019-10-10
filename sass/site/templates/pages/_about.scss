@@ -78,6 +78,32 @@
             font-size: 18px;
           }
         }
+
+        a {
+          background-color: #1BAD8B;
+          color: white;
+          text-decoration: none;
+          padding: 7px 12px;
+          border-radius: 3px;
+          display: inline-block;
+          margin-top: 10px;
+          font-size: 12px;
+  
+          &:active, &:visited {
+            color: white;
+          }
+  
+          @include media(tablet) {
+            font-size: 14px;
+            padding: 9px 16px;
+          }
+          
+          @include media(desktop) {
+            font-size: 16px;
+            padding: 10px 20px;
+            margin-top: 35px;
+          }
+        }
       }
     }
   }
@@ -262,6 +288,14 @@
         
         @include media(desktop) {
           font-size: 18px;
+        }
+      }
+
+      a {
+        color: #1BAD8B;
+
+        &:active, &:visited {
+          color: #1BAD8B;
         }
       }
     }
