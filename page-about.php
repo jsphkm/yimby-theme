@@ -106,18 +106,6 @@ get_header();
           </ul>
         </div>
       </div>
-      <div class="inquiries-container">
-        <div class="inquiries-inner">
-          <div class="inquiries-header">
-            <?php
-            foreach($inquiries_header_array as $inquiries_header) {
-              print_r($inquiries_header);
-            }
-            ?>
-          </div>
-          <?php echo do_shortcode('[contact-form-7 id="102" title="Media Inquiries Form"]'); ?>
-        </div>
-      </div>
     </main>
   </div>
 <?php

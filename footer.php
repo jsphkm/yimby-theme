@@ -51,7 +51,7 @@
 					?>
 				</div>
 			</div><!-- .site-info -->
-			<p class="footer-redirect">For media inquiries, please email us at yimbydemssd@gmail.com or click here.</p>
+			<p class="footer-redirect">For media inquiries, please email us at yimbydemssd@gmail.com or <a href="/media-inquiries">click here</a>.</p>
 		</div>
 		<p class="footer-businessinfo">
 			YIMBY Democrats of San Diego County // 13295 Meade Avenue, Suite 212, San Diego, CA 92116

@@ -1234,6 +1234,12 @@ body.fixed {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
 }
+.site-footer .subscribe-form p.footer-redirect a {
+  color: #1BAD8B;
+}
+.site-footer .subscribe-form p.footer-redirect a:active, .site-footer .subscribe-form p.footer-redirect a:visited {
+  color: #1BAD8B;
+}
 .site-footer p.footer-businessinfo {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
@@ -2023,91 +2029,6 @@ body.fixed {
     font-size: 16px;
   }
 }
-.aboutpage .inquiries-container {
-  background-color: #0073A3;
-  color: white;
-  padding: 20px 20px;
-}
-@media only screen and (min-width: 320px) {
-  .aboutpage .inquiries-container {
-    padding: 30px 20px;
-  }
-}
-@media only screen and (min-width: 700px) {
-  .aboutpage .inquiries-container {
-    padding: 50px 20px;
-  }
-}
-@media only screen and (min-width: 1000px) {
-  .aboutpage .inquiries-container {
-    padding: 80px 20px;
-  }
-}
-.aboutpage .inquiries-container .inquiries-inner {
-  max-width: 800px;
-  margin: 0 auto;
-}
-.aboutpage .inquiries-container .inquiries-inner .inquiries-header {
-  text-align: center;
-}
-.aboutpage .inquiries-container .inquiries-inner .inquiries-header h2 {
-  font-size: 16px;
-}
-@media only screen and (min-width: 320px) {
-  .aboutpage .inquiries-container .inquiries-inner .inquiries-header h2 {
-    font-size: 18px;
-  }
-}
-@media only screen and (min-width: 700px) {
-  .aboutpage .inquiries-container .inquiries-inner .inquiries-header h2 {
-    margin: 28px 0;
-    font-size: 28px;
-  }
-}
-@media only screen and (min-width: 1000px) {
-  .aboutpage .inquiries-container .inquiries-inner .inquiries-header h2 {
-    margin: 32px 0;
-    font-size: 38px;
-  }
-}
-.aboutpage .inquiries-container .inquiries-inner .inquiries-header p {
-  font-family: sans-serif;
-  font-size: 14px;
-}
-@media only screen and (min-width: 700px) {
-  .aboutpage .inquiries-container .inquiries-inner .inquiries-header p {
-    font-size: 16px;
-  }
-}
-@media only screen and (min-width: 1000px) {
-  .aboutpage .inquiries-container .inquiries-inner .inquiries-header p {
-    font-size: 18px;
-  }
-}
-.aboutpage .inquiries-container .inquiries-inner .wpcf7-form label {
-  font-size: 0.8rem;
-}
-.aboutpage .inquiries-container .inquiries-inner .wpcf7-form .wpcf7-text, .aboutpage .inquiries-container .inquiries-inner .wpcf7-form .wpcf7-textarea {
-  background-color: transparent;
-  border: 1px solid #ccc;
-  color: #eee;
-}
-.aboutpage .inquiries-container .inquiries-inner .wpcf7-form .wpcf7-text:focus, .aboutpage .inquiries-container .inquiries-inner .wpcf7-form .wpcf7-textarea:focus {
-  border: 1px solid white;
-}
-.aboutpage .inquiries-container .inquiries-inner .wpcf7-form .wpcf7-text {
-  max-width: 440px;
-  width: 100%;
-}
-.aboutpage .inquiries-container .inquiries-inner .wpcf7-form .wpcf7-submit {
-  background-color: white;
-  border-radius: 3px;
-  color: #0073A3;
-  padding: 15px 50px;
-  font-size: 14px;
-  font-weight: 600;
-  border: 0;
-}
 
 .newspage .news-hero {
   margin-bottom: 50px;
@@ -2733,6 +2654,92 @@ body.fixed {
   .news-list .right .post-content {
     font-size: 18px;
   }
+}
+
+.mediainquiriespage .inquiries-container {
+  background-color: #0073A3;
+  color: white;
+  padding: 20px 20px;
+}
+@media only screen and (min-width: 320px) {
+  .mediainquiriespage .inquiries-container {
+    padding: 30px 20px;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .mediainquiriespage .inquiries-container {
+    padding: 50px 20px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .mediainquiriespage .inquiries-container {
+    padding: 80px 20px;
+  }
+}
+.mediainquiriespage .inquiries-container .inquiries-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.mediainquiriespage .inquiries-container .inquiries-inner .inquiries-header {
+  text-align: center;
+}
+.mediainquiriespage .inquiries-container .inquiries-inner .inquiries-header h2 {
+  font-size: 16px;
+}
+@media only screen and (min-width: 320px) {
+  .mediainquiriespage .inquiries-container .inquiries-inner .inquiries-header h2 {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .mediainquiriespage .inquiries-container .inquiries-inner .inquiries-header h2 {
+    margin: 28px 0;
+    font-size: 28px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .mediainquiriespage .inquiries-container .inquiries-inner .inquiries-header h2 {
+    margin: 32px 0;
+    font-size: 38px;
+  }
+}
+.mediainquiriespage .inquiries-container .inquiries-inner .inquiries-header p {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+@media only screen and (min-width: 700px) {
+  .mediainquiriespage .inquiries-container .inquiries-inner .inquiries-header p {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .mediainquiriespage .inquiries-container .inquiries-inner .inquiries-header p {
+    font-size: 18px;
+  }
+}
+.mediainquiriespage .inquiries-container .inquiries-inner .wpcf7-form label {
+  font-size: 0.8rem;
+}
+.mediainquiriespage .inquiries-container .inquiries-inner .wpcf7-form .wpcf7-text, .mediainquiriespage .inquiries-container .inquiries-inner .wpcf7-form .wpcf7-textarea {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  color: #eee;
+}
+.mediainquiriespage .inquiries-container .inquiries-inner .wpcf7-form .wpcf7-text:focus, .mediainquiriespage .inquiries-container .inquiries-inner .wpcf7-form .wpcf7-textarea:focus {
+  border: 1px solid white;
+}
+.mediainquiriespage .inquiries-container .inquiries-inner .wpcf7-form .wpcf7-text {
+  max-width: 440px;
+  width: 100%;
+}
+.mediainquiriespage .inquiries-container .inquiries-inner .wpcf7-form .wpcf7-submit {
+  background-color: white;
+  border-radius: 3px;
+  color: #0073A3;
+  padding: 15px 50px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 0;
 }
 
 /*--------------------------------------------------------------
