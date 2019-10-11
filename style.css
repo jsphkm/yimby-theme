@@ -1336,6 +1336,9 @@ body.fixed {
     flex-direction: column;
   }
 }
+.homepage .engagementlinks-container ul li a:active, .homepage .engagementlinks-container ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
 .homepage .engagementlinks-container ul li a img {
   max-width: 30px;
 }
@@ -1941,7 +1944,7 @@ body.fixed {
   margin-top: 20px;
   margin-bottom: 200px;
 }
-.aboutpage .board-container .board-list-container .board-list {
+.aboutpage .board-container .board-list-container ul.board-list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -1954,10 +1957,10 @@ body.fixed {
   padding: 0;
   list-style-type: none;
 }
-.aboutpage .board-container .board-list-container .board-list::-webkit-scrollbar {
+.aboutpage .board-container .board-list-container ul.board-list::-webkit-scrollbar {
   display: none;
 }
-.aboutpage .board-container .board-list-container .board-list .card {
+.aboutpage .board-container .board-list-container ul.board-list li.card {
   flex: 0 0 auto;
   max-width: 200px;
   text-align: center;
@@ -1965,67 +1968,125 @@ body.fixed {
   padding: 10px;
 }
 @media only screen and (min-width: 320px) {
-  .aboutpage .board-container .board-list-container .board-list .card {
+  .aboutpage .board-container .board-list-container ul.board-list li.card {
     max-width: 240px;
   }
 }
 @media only screen and (min-width: 700px) {
-  .aboutpage .board-container .board-list-container .board-list .card {
+  .aboutpage .board-container .board-list-container ul.board-list li.card {
     max-width: 280px;
   }
 }
 @media only screen and (min-width: 1000px) {
-  .aboutpage .board-container .board-list-container .board-list .card {
+  .aboutpage .board-container .board-list-container ul.board-list li.card {
     max-width: 320px;
   }
 }
-.aboutpage .board-container .board-list-container .board-list .card h3 {
+.aboutpage .board-container .board-list-container ul.board-list li.card .left h3 {
   margin-bottom: 0px;
   color: #0073A3;
   font-size: 14px;
 }
 @media only screen and (min-width: 700px) {
-  .aboutpage .board-container .board-list-container .board-list .card h3 {
+  .aboutpage .board-container .board-list-container ul.board-list li.card .left h3 {
     font-size: 16px;
   }
 }
 @media only screen and (min-width: 1000px) {
-  .aboutpage .board-container .board-list-container .board-list .card h3 {
+  .aboutpage .board-container .board-list-container ul.board-list li.card .left h3 {
     font-size: 18px;
   }
 }
-.aboutpage .board-container .board-list-container .board-list .card img {
+.aboutpage .board-container .board-list-container ul.board-list li.card .left img {
   border-radius: 50%;
 }
-.aboutpage .board-container .board-list-container .board-list .card small {
+.aboutpage .board-container .board-list-container ul.board-list li.card .left small {
   font-size: 11px;
   font-family: sans-serif;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   max-width: 180px;
+  text-align: center;
+  display: inline-block;
 }
 @media only screen and (min-width: 700px) {
-  .aboutpage .board-container .board-list-container .board-list .card small {
+  .aboutpage .board-container .board-list-container ul.board-list li.card .left small {
     font-size: 13px;
   }
 }
 @media only screen and (min-width: 1000px) {
-  .aboutpage .board-container .board-list-container .board-list .card small {
+  .aboutpage .board-container .board-list-container ul.board-list li.card .left small {
     font-size: 15px;
   }
 }
-.aboutpage .board-container .board-list-container .board-list .card p {
+.aboutpage .board-container .board-list-container ul.board-list li.card .right p {
+  display: none;
   font-family: sans-serif;
   font-size: 12px;
 }
 @media only screen and (min-width: 700px) {
-  .aboutpage .board-container .board-list-container .board-list .card p {
+  .aboutpage .board-container .board-list-container ul.board-list li.card .right p {
     font-size: 14px;
   }
 }
 @media only screen and (min-width: 1000px) {
-  .aboutpage .board-container .board-list-container .board-list .card p {
+  .aboutpage .board-container .board-list-container ul.board-list li.card .right p {
+    font-size: 16px;
+  }
+}
+.aboutpage .board-container .board-list-container ul.board-list.bio-active {
+  flex-direction: column;
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+}
+.aboutpage .board-container .board-list-container ul.board-list.bio-active li.card {
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  flex: 0 0 auto;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  max-width: 100%;
+}
+.aboutpage .board-container .board-list-container ul.board-list.bio-active li.card .left {
+  flex: 1;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.aboutpage .board-container .board-list-container ul.board-list.bio-active li.card .right {
+  flex: 4;
+  text-align: initial;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-left: 1px solid #eee;
+}
+.aboutpage .board-container .board-list-container ul.board-list.bio-active li.card .right p {
+  display: flex;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+@media only screen and (min-width: 700px) {
+  .aboutpage .board-container .board-list-container ul.board-list.bio-active li.card .right p {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .aboutpage .board-container .board-list-container ul.board-list.bio-active li.card .right p {
     font-size: 16px;
   }
 }
@@ -2716,6 +2777,12 @@ body.fixed {
   .mediainquiriespage .inquiries-container .inquiries-inner .inquiries-header p {
     font-size: 18px;
   }
+}
+.mediainquiriespage .inquiries-container .inquiries-inner .inquiries-header p a {
+  color: white;
+}
+.mediainquiriespage .inquiries-container .inquiries-inner .inquiries-header p a:active, .mediainquiriespage .inquiries-container .inquiries-inner .inquiries-header p a:visited {
+  color: white;
 }
 .mediainquiriespage .inquiries-container .inquiries-inner .wpcf7-form label {
   font-size: 0.8rem;

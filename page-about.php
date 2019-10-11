@@ -93,13 +93,19 @@ get_header();
           <?php
           $executive_board = get_field('executive_board');
           ?>
+          <!-- <ul class="board-list bio-active"> -->
           <ul class="board-list">
             <?php
             foreach($executive_board as $board_member) {
               echo '<li class="card">';
-              echo '<img src="' . $board_member[image][sizes][thumbnail] . '" />';
-              echo '<h3>' . $board_member[name] . '</h3>';
-              echo '<small>' . $board_member[title] . '</small>';
+                echo '<div class="left">';
+                  echo '<img src="' . $board_member[image][sizes][thumbnail] . '" />';
+                  echo '<h3>' . $board_member[name] . '</h3>';
+                  echo '<small>' . $board_member[title] . '</small>';
+                echo '</div>';
+                echo '<div class="right">';
+                  echo '<p>' . $board_member[bio] . '</p>';
+                echo '</div>';
               echo '</li>';
             };
             ?>

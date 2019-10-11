@@ -52,6 +52,14 @@
           @include media(desktop) {
             font-size: 18px;
           }
+
+          a {
+            color: white;
+
+            &:active, &:visited {
+              color: white;
+            }
+          }
         }
       }
       
