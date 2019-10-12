@@ -42,9 +42,9 @@ get_header();
         background-image: url(<?php echo $hero_image_url ?>)
       ">
         <div class="wp-block-cover__inner-container news-hero-inner">
-          <p style="text-align: center" class="has-large-font-size">
+          <h1 style="text-align: center" class="has-large-font-size">
             <?php echo $hero_header ?>
-          </p>
+          </h1>
           <p class="hero-description" style="text-align: center">
             <?php echo $hero_description ?>
           </p>

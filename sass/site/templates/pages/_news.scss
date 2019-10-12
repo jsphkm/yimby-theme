@@ -13,6 +13,41 @@
 
     .news-hero-inner {
       max-width: 700px;
+
+      h1 {
+        font-size: 20px;
+        font-weight: 800;
+        margin: 20px 0;
+
+        @include media(largephone) {
+          font-size: 22px;
+        }
+
+        @include media(tablet) {
+          font-size: 28px;
+        }
+
+        @include media(desktop) {
+          font-size: 38px;
+        }
+      }
+      
+      p {
+        font-family: sans-serif;
+        font-size: 12px;
+
+        @include media(largephone) {
+          font-size: 14px;
+        }
+
+        @include media(tablet) {
+          font-size: 16px;
+        }
+
+        @include media(desktop) {
+          font-size: 18px;
+        }
+      }
     }
   }
   
