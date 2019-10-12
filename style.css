@@ -1587,7 +1587,7 @@ body.fixed {
 }
 @media only screen and (min-width: 700px) {
   .homepage .fbendorsement-container .right {
-    margin-left: 20px;
+    margin-left: 50px;
   }
 }
 .homepage .fbendorsement-container .right h2 {
@@ -1849,47 +1849,34 @@ body.fixed {
     font-size: 18px;
   }
 }
-.aboutpage .board-container .about-team {
+.aboutpage .board-container .board-hero {
   max-width: 800px;
   margin: 0 auto;
   background-color: white;
-  padding: 2rem 2rem 0 2rem;
+  padding: 6rem 2rem 0 2rem;
   margin: 0 auto;
   flex-direction: column;
   width: 100%;
-  min-height: 120px;
 }
-@media only screen and (min-width: 320px) {
-  .aboutpage .board-container .about-team {
-    min-height: 240px;
-  }
+.aboutpage .board-container .board-hero.wp-block-cover {
+  min-height: 0;
 }
-@media only screen and (min-width: 700px) {
-  .aboutpage .board-container .about-team {
-    min-height: 320px;
-  }
-}
-@media only screen and (min-width: 1000px) {
-  .aboutpage .board-container .about-team {
-    min-height: 480px;
-  }
-}
-.aboutpage .board-container .about-team h4 {
+.aboutpage .board-container .board-hero h4 {
   margin: 0 0 5px 0;
   font-size: 11px;
   text-align: center;
 }
 @media only screen and (min-width: 700px) {
-  .aboutpage .board-container .about-team h4 {
+  .aboutpage .board-container .board-hero h4 {
     font-size: 16px;
   }
 }
 @media only screen and (min-width: 1000px) {
-  .aboutpage .board-container .about-team h4 {
+  .aboutpage .board-container .board-hero h4 {
     font-size: 20px;
   }
 }
-.aboutpage .board-container .about-team h2 {
+.aboutpage .board-container .board-hero h2 {
   margin: 5px 0 18px 0;
   padding: 0;
   color: #0073A3;
@@ -1899,50 +1886,76 @@ body.fixed {
   font-size: 20px;
 }
 @media only screen and (min-width: 320px) {
-  .aboutpage .board-container .about-team h2 {
+  .aboutpage .board-container .board-hero h2 {
     margin: 6px 0 20px 0;
     font-size: 22px;
   }
 }
 @media only screen and (min-width: 700px) {
-  .aboutpage .board-container .about-team h2 {
+  .aboutpage .board-container .board-hero h2 {
     margin: 10px 0 30px 0;
     font-size: 28px;
   }
 }
 @media only screen and (min-width: 1000px) {
-  .aboutpage .board-container .about-team h2 {
+  .aboutpage .board-container .board-hero h2 {
     margin: 18px 0 42px 0;
     font-size: 38px;
   }
 }
-.aboutpage .board-container .about-team p {
+.aboutpage .board-container .board-hero p {
   font-family: sans-serif;
   font-size: 14px;
   margin: 4px 0 10px 0;
   width: 100%;
 }
 @media only screen and (min-width: 700px) {
-  .aboutpage .board-container .about-team p {
+  .aboutpage .board-container .board-hero p {
     font-size: 16px;
   }
 }
 @media only screen and (min-width: 1000px) {
-  .aboutpage .board-container .about-team p {
+  .aboutpage .board-container .board-hero p {
     font-size: 18px;
   }
 }
-.aboutpage .board-container .about-team a {
+.aboutpage .board-container .board-hero a {
   color: #1BAD8B;
 }
-.aboutpage .board-container .about-team a:active, .aboutpage .board-container .about-team a:visited {
+.aboutpage .board-container .board-hero a:active, .aboutpage .board-container .board-hero a:visited {
   color: #1BAD8B;
 }
 .aboutpage .board-container .board-list-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-top: 20px;
   margin-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+.aboutpage .board-container .board-list-container #expand-btn {
+  color: #1BAD8B;
+  background-color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: 2px solid #1BAD8B;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  opacity: 0.8;
+}
+.aboutpage .board-container .board-list-container #expand-btn.isActive {
+  color: white;
+  background-color: #1BAD8B;
+}
+.aboutpage .board-container .board-list-container #expand-btn:hover, .aboutpage .board-container .board-list-container #expand-btn:active {
+  cursor: pointer;
+}
+.aboutpage .board-container .board-list-container #expand-btn:hover, .aboutpage .board-container .board-list-container #expand-btn:focus {
+  opacity: 1;
 }
 .aboutpage .board-container .board-list-container ul.board-list {
   display: flex;
@@ -1952,8 +1965,7 @@ body.fixed {
   -webkit-overflow-scrolling: touch;
   overflow: -moz-scrollbars-none;
   -ms-overflow-style: none;
-  max-width: 1200px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   list-style-type: none;
 }
@@ -1982,25 +1994,41 @@ body.fixed {
     max-width: 320px;
   }
 }
+.aboutpage .board-container .board-list-container ul.board-list li.card .left {
+  width: 100px;
+}
+@media only screen and (min-width: 700px) {
+  .aboutpage .board-container .board-list-container ul.board-list li.card .left {
+    width: 120px;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .aboutpage .board-container .board-list-container ul.board-list li.card .left {
+    width: 140px;
+  }
+}
 .aboutpage .board-container .board-list-container ul.board-list li.card .left h3 {
-  margin-bottom: 0px;
+  margin: 5px 0 0 0;
   color: #0073A3;
-  font-size: 14px;
+  font-size: 12px;
 }
 @media only screen and (min-width: 700px) {
   .aboutpage .board-container .board-list-container ul.board-list li.card .left h3 {
-    font-size: 16px;
+    font-size: 15px;
+    margin: 8px 0 0 0;
   }
 }
 @media only screen and (min-width: 1000px) {
   .aboutpage .board-container .board-list-container ul.board-list li.card .left h3 {
-    font-size: 18px;
+    font-size: 17px;
+    margin: 10px 0 0 0;
   }
 }
 .aboutpage .board-container .board-list-container ul.board-list li.card .left img {
   border-radius: 50%;
 }
 .aboutpage .board-container .board-list-container ul.board-list li.card .left small {
+  word-break: keep-all;
   font-size: 11px;
   font-family: sans-serif;
   display: flex;
@@ -2017,7 +2045,7 @@ body.fixed {
 }
 @media only screen and (min-width: 1000px) {
   .aboutpage .board-container .board-list-container ul.board-list li.card .left small {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 .aboutpage .board-container .board-list-container ul.board-list li.card .right p {
@@ -2047,6 +2075,8 @@ body.fixed {
 }
 .aboutpage .board-container .board-list-container ul.board-list.bio-active li.card {
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   flex: 0 0 auto;
   text-align: center;
@@ -2058,36 +2088,110 @@ body.fixed {
   font-size: 15px;
   max-width: 100%;
 }
+@media only screen and (min-width: 700px) {
+  .aboutpage .board-container .board-list-container ul.board-list.bio-active li.card {
+    flex-direction: row;
+  }
+}
 .aboutpage .board-container .board-list-container ul.board-list.bio-active li.card .left {
   flex: 1;
-  padding: 0 20px;
+  padding: 0 14px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.aboutpage .board-container .board-list-container ul.board-list.bio-active li.card .left img {
+  width: 80px;
+}
+@media only screen and (min-width: 700px) {
+  .aboutpage .board-container .board-list-container ul.board-list.bio-active li.card .left img {
+    width: 100px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .aboutpage .board-container .board-list-container ul.board-list.bio-active li.card .left img {
+    width: 120px;
+  }
+}
+.aboutpage .board-container .board-list-container ul.board-list.bio-active li.card .left .left-subtext {
+  display: flex;
+  flex-direction: column;
+}
+.aboutpage .board-container .board-list-container ul.board-list.bio-active li.card .left .left-subtext h3 {
+  margin: 5px 0 0 0;
+  color: #0073A3;
+  font-size: 11px;
+  text-align: center;
+}
+@media only screen and (min-width: 700px) {
+  .aboutpage .board-container .board-list-container ul.board-list.bio-active li.card .left .left-subtext h3 {
+    font-size: 13px;
+    margin: 8px 0 0 0;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .aboutpage .board-container .board-list-container ul.board-list.bio-active li.card .left .left-subtext h3 {
+    font-size: 15px;
+    margin: 10px 0 0 0;
+  }
+}
+.aboutpage .board-container .board-list-container ul.board-list.bio-active li.card .left .left-subtext small {
+  font-size: 10px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 180px;
+  text-align: center;
+  display: inline-block;
+}
+@media only screen and (min-width: 700px) {
+  .aboutpage .board-container .board-list-container ul.board-list.bio-active li.card .left .left-subtext small {
+    font-size: 11px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .aboutpage .board-container .board-list-container ul.board-list.bio-active li.card .left .left-subtext small {
+    font-size: 13px;
+  }
 }
 .aboutpage .board-container .board-list-container ul.board-list.bio-active li.card .right {
-  flex: 4;
+  flex: 3;
   text-align: initial;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
   border-left: 1px solid #eee;
+}
+@media only screen and (min-width: 700px) {
+  .aboutpage .board-container .board-list-container ul.board-list.bio-active li.card .right {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .aboutpage .board-container .board-list-container ul.board-list.bio-active li.card .right {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 .aboutpage .board-container .board-list-container ul.board-list.bio-active li.card .right p {
   display: flex;
   font-family: sans-serif;
-  font-size: 12px;
+  font-size: 11px;
 }
 @media only screen and (min-width: 700px) {
   .aboutpage .board-container .board-list-container ul.board-list.bio-active li.card .right p {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 @media only screen and (min-width: 1000px) {
   .aboutpage .board-container .board-list-container ul.board-list.bio-active li.card .right p {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 

@@ -81,15 +81,30 @@ get_header();
           ?>
         </div>
       </div>
-      <div id="board-container" class="board-container">
-        <div class="wp-block-cover about-team">
+      <div class="board-container">
+        <div class="wp-block-cover board-hero">
           <?php
           foreach($team_header_array as $team_header) {
             echo $team_header;
           }
           ?>
         </div>
+        <!-- <form id="boardbio-form">
+          <fieldset>
+            <label class="iconview-label" for="iconview" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/Iconsview.svg');">
+              <input type="radio" id="iconview" name="board-bio" value="iconview" checked="checked" />
+            </label>
+            <label class="listview-label" for="listview" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/Listview.svg');">
+              <input type="radio" id="listview" name="board-bio" value="listview" />
+            </label>
+          </fieldset>
+        </form> -->
         <div class="board-list-container">  
+          <!-- <select id="board-select" onchange="toggleView()">
+            <option selected>Icon View</option>
+            <option>List View</option>
+          </select> -->
+          <button id="expand-btn" onclick="toggleView()">Expand Details</button>
           <?php
           $executive_board = get_field('executive_board');
           ?>
@@ -100,8 +115,10 @@ get_header();
               echo '<li class="card">';
                 echo '<div class="left">';
                   echo '<img src="' . $board_member[image][sizes][thumbnail] . '" />';
-                  echo '<h3>' . $board_member[name] . '</h3>';
-                  echo '<small>' . $board_member[title] . '</small>';
+                  echo '<div class="left-subtext">';
+                    echo '<h3>' . $board_member[name] . '</h3>';
+                    echo '<small>' . $board_member[title] . '</small>';
+                  echo '</div>';
                 echo '</div>';
                 echo '<div class="right">';
                   echo '<p>' . $board_member[bio] . '</p>';
@@ -114,6 +131,15 @@ get_header();
       </div>
     </main>
   </div>
+  <script type="text/javascript">
+    function toggleView() {
+      document.querySelector('.board-list').classList.toggle('bio-active');
+      document.querySelector('#expand-btn').classList.toggle('isActive');
+    };
+    // window.onload = function () {
+    //   document.getElementById('board-select').selectedIndex = null;
+    // }
+  </script>
 <?php
 get_sidebar();
 get_footer();

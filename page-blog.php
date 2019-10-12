@@ -64,8 +64,6 @@ get_header();
 
       echo '<ul>';
       foreach( $posts_array as $post) {
-        // print_r($post);
-
         $post_permalink = get_post_permalink($post -> ID);
         $post_image = get_the_post_thumbnail_url($post -> ID);
         $post_title = $post -> post_title;
