@@ -1662,6 +1662,17 @@ body.fixed {
 }
 .aboutpage .hero-description-container .hero-description-inner-container {
   margin: 0 auto;
+  min-height: 150px;
+}
+@media only screen and (min-width: 700px) {
+  .aboutpage .hero-description-container .hero-description-inner-container {
+    min-height: 50px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .aboutpage .hero-description-container .hero-description-inner-container {
+    min-height: 130px;
+  }
 }
 .aboutpage .hero-description-container .hero-description-inner-container .hero-description {
   margin: 0 20px;
@@ -1777,7 +1788,7 @@ body.fixed {
 }
 @media only screen and (min-width: 1000px) {
   .aboutpage .corevalues h2 {
-    font-size: 36px;
+    font-size: 34px;
   }
 }
 .aboutpage .corevalues h4 {
@@ -1849,7 +1860,7 @@ body.fixed {
     font-size: 18px;
   }
 }
-.aboutpage .board-container .board-hero {
+.aboutpage #board-container .board-hero {
   max-width: 800px;
   margin: 0 auto;
   background-color: white;
@@ -1858,25 +1869,25 @@ body.fixed {
   flex-direction: column;
   width: 100%;
 }
-.aboutpage .board-container .board-hero.wp-block-cover {
+.aboutpage #board-container .board-hero.wp-block-cover {
   min-height: 0;
 }
-.aboutpage .board-container .board-hero h4 {
+.aboutpage #board-container .board-hero h4 {
   margin: 0 0 5px 0;
   font-size: 11px;
   text-align: center;
 }
 @media only screen and (min-width: 700px) {
-  .aboutpage .board-container .board-hero h4 {
+  .aboutpage #board-container .board-hero h4 {
     font-size: 16px;
   }
 }
 @media only screen and (min-width: 1000px) {
-  .aboutpage .board-container .board-hero h4 {
+  .aboutpage #board-container .board-hero h4 {
     font-size: 20px;
   }
 }
-.aboutpage .board-container .board-hero h2 {
+.aboutpage #board-container .board-hero h2 {
   margin: 5px 0 18px 0;
   padding: 0;
   color: #0073A3;
@@ -1886,46 +1897,46 @@ body.fixed {
   font-size: 20px;
 }
 @media only screen and (min-width: 320px) {
-  .aboutpage .board-container .board-hero h2 {
+  .aboutpage #board-container .board-hero h2 {
     margin: 6px 0 20px 0;
     font-size: 22px;
   }
 }
 @media only screen and (min-width: 700px) {
-  .aboutpage .board-container .board-hero h2 {
+  .aboutpage #board-container .board-hero h2 {
     margin: 10px 0 30px 0;
     font-size: 28px;
   }
 }
 @media only screen and (min-width: 1000px) {
-  .aboutpage .board-container .board-hero h2 {
+  .aboutpage #board-container .board-hero h2 {
     margin: 18px 0 42px 0;
     font-size: 38px;
   }
 }
-.aboutpage .board-container .board-hero p {
+.aboutpage #board-container .board-hero p {
   font-family: sans-serif;
   font-size: 14px;
   margin: 4px 0 10px 0;
   width: 100%;
 }
 @media only screen and (min-width: 700px) {
-  .aboutpage .board-container .board-hero p {
+  .aboutpage #board-container .board-hero p {
     font-size: 16px;
   }
 }
 @media only screen and (min-width: 1000px) {
-  .aboutpage .board-container .board-hero p {
+  .aboutpage #board-container .board-hero p {
     font-size: 18px;
   }
 }
-.aboutpage .board-container .board-hero a {
+.aboutpage #board-container .board-hero a {
   color: #1BAD8B;
 }
-.aboutpage .board-container .board-hero a:active, .aboutpage .board-container .board-hero a:visited {
+.aboutpage #board-container .board-hero a:active, .aboutpage #board-container .board-hero a:visited {
   color: #1BAD8B;
 }
-.aboutpage .board-container .board-list-container {
+.aboutpage #board-container .board-list-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1933,31 +1944,47 @@ body.fixed {
   margin-left: auto;
   margin-right: auto;
   max-width: 1000px;
-  padding: 0 20px;
+  padding: 0 0px;
 }
-.aboutpage .board-container .board-list-container #expand-btn {
+.aboutpage #board-container .board-list-container #expand-btn {
   color: #1BAD8B;
   background-color: white;
-  font-size: 16px;
-  padding: 10px 20px;
+  font-size: 12px;
+  padding: 8px 15px;
   border: 2px solid #1BAD8B;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
-  margin-bottom: 100px;
+  margin-top: 20px;
+  margin-bottom: 50px;
   opacity: 0.8;
 }
-.aboutpage .board-container .board-list-container #expand-btn.isActive {
+@media only screen and (min-width: 700px) {
+  .aboutpage #board-container .board-list-container #expand-btn {
+    font-size: 14px;
+    margin-top: 35px;
+    margin-bottom: 75px;
+    padding: 9px 18px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .aboutpage #board-container .board-list-container #expand-btn {
+    font-size: 16px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 10px 20px;
+  }
+}
+.aboutpage #board-container .board-list-container #expand-btn.isActive {
   color: white;
   background-color: #1BAD8B;
 }
-.aboutpage .board-container .board-list-container #expand-btn:hover, .aboutpage .board-container .board-list-container #expand-btn:active {
+.aboutpage #board-container .board-list-container #expand-btn:hover, .aboutpage #board-container .board-list-container #expand-btn:active {
   cursor: pointer;
 }
-.aboutpage .board-container .board-list-container #expand-btn:hover, .aboutpage .board-container .board-list-container #expand-btn:focus {
+.aboutpage #board-container .board-list-container #expand-btn:hover, .aboutpage #board-container .board-list-container #expand-btn:focus {
   opacity: 1;
 }
-.aboutpage .board-container .board-list-container ul.board-list {
+.aboutpage #board-container .board-list-container ul.board-list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -1969,65 +1996,64 @@ body.fixed {
   padding: 0;
   list-style-type: none;
 }
-.aboutpage .board-container .board-list-container ul.board-list::-webkit-scrollbar {
+.aboutpage #board-container .board-list-container ul.board-list::-webkit-scrollbar {
   display: none;
 }
-.aboutpage .board-container .board-list-container ul.board-list li.card {
+.aboutpage #board-container .board-list-container ul.board-list li.card {
   flex: 0 0 auto;
-  max-width: 200px;
   text-align: center;
   margin: 10px;
   padding: 10px;
 }
 @media only screen and (min-width: 320px) {
-  .aboutpage .board-container .board-list-container ul.board-list li.card {
+  .aboutpage #board-container .board-list-container ul.board-list li.card {
     max-width: 240px;
   }
 }
 @media only screen and (min-width: 700px) {
-  .aboutpage .board-container .board-list-container ul.board-list li.card {
+  .aboutpage #board-container .board-list-container ul.board-list li.card {
     max-width: 280px;
   }
 }
 @media only screen and (min-width: 1000px) {
-  .aboutpage .board-container .board-list-container ul.board-list li.card {
+  .aboutpage #board-container .board-list-container ul.board-list li.card {
     max-width: 320px;
   }
 }
-.aboutpage .board-container .board-list-container ul.board-list li.card .left {
+.aboutpage #board-container .board-list-container ul.board-list li.card .left {
   width: 100px;
 }
 @media only screen and (min-width: 700px) {
-  .aboutpage .board-container .board-list-container ul.board-list li.card .left {
+  .aboutpage #board-container .board-list-container ul.board-list li.card .left {
     width: 120px;
   }
 }
 @media only screen and (min-width: 700px) {
-  .aboutpage .board-container .board-list-container ul.board-list li.card .left {
+  .aboutpage #board-container .board-list-container ul.board-list li.card .left {
     width: 140px;
   }
 }
-.aboutpage .board-container .board-list-container ul.board-list li.card .left h3 {
+.aboutpage #board-container .board-list-container ul.board-list li.card .left h3 {
   margin: 5px 0 0 0;
   color: #0073A3;
   font-size: 12px;
 }
 @media only screen and (min-width: 700px) {
-  .aboutpage .board-container .board-list-container ul.board-list li.card .left h3 {
+  .aboutpage #board-container .board-list-container ul.board-list li.card .left h3 {
     font-size: 15px;
     margin: 8px 0 0 0;
   }
 }
 @media only screen and (min-width: 1000px) {
-  .aboutpage .board-container .board-list-container ul.board-list li.card .left h3 {
+  .aboutpage #board-container .board-list-container ul.board-list li.card .left h3 {
     font-size: 17px;
     margin: 10px 0 0 0;
   }
 }
-.aboutpage .board-container .board-list-container ul.board-list li.card .left img {
+.aboutpage #board-container .board-list-container ul.board-list li.card .left img {
   border-radius: 50%;
 }
-.aboutpage .board-container .board-list-container ul.board-list li.card .left small {
+.aboutpage #board-container .board-list-container ul.board-list li.card .left small {
   word-break: keep-all;
   font-size: 11px;
   font-family: sans-serif;
@@ -2039,31 +2065,31 @@ body.fixed {
   display: inline-block;
 }
 @media only screen and (min-width: 700px) {
-  .aboutpage .board-container .board-list-container ul.board-list li.card .left small {
+  .aboutpage #board-container .board-list-container ul.board-list li.card .left small {
     font-size: 13px;
   }
 }
 @media only screen and (min-width: 1000px) {
-  .aboutpage .board-container .board-list-container ul.board-list li.card .left small {
+  .aboutpage #board-container .board-list-container ul.board-list li.card .left small {
     font-size: 14px;
   }
 }
-.aboutpage .board-container .board-list-container ul.board-list li.card .right p {
+.aboutpage #board-container .board-list-container ul.board-list li.card .right p {
   display: none;
   font-family: sans-serif;
   font-size: 12px;
 }
 @media only screen and (min-width: 700px) {
-  .aboutpage .board-container .board-list-container ul.board-list li.card .right p {
+  .aboutpage #board-container .board-list-container ul.board-list li.card .right p {
     font-size: 14px;
   }
 }
 @media only screen and (min-width: 1000px) {
-  .aboutpage .board-container .board-list-container ul.board-list li.card .right p {
+  .aboutpage #board-container .board-list-container ul.board-list li.card .right p {
     font-size: 16px;
   }
 }
-.aboutpage .board-container .board-list-container ul.board-list.bio-active {
+.aboutpage #board-container .board-list-container ul.board-list.bio-active {
   flex-direction: column;
   max-width: 800px;
   display: flex;
@@ -2073,7 +2099,7 @@ body.fixed {
   list-style-type: none;
   width: 100%;
 }
-.aboutpage .board-container .board-list-container ul.board-list.bio-active li.card {
+.aboutpage #board-container .board-list-container ul.board-list.bio-active li.card {
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
   -moz-box-: 0 0 5px 2px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
@@ -2083,62 +2109,62 @@ body.fixed {
   margin: 10px;
   padding: 10px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   max-width: 100%;
 }
 @media only screen and (min-width: 700px) {
-  .aboutpage .board-container .board-list-container ul.board-list.bio-active li.card {
+  .aboutpage #board-container .board-list-container ul.board-list.bio-active li.card {
     flex-direction: row;
   }
 }
-.aboutpage .board-container .board-list-container ul.board-list.bio-active li.card .left {
+.aboutpage #board-container .board-list-container ul.board-list.bio-active li.card .left {
   flex: 1;
-  padding: 0 14px;
+  padding: 7px 14px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-.aboutpage .board-container .board-list-container ul.board-list.bio-active li.card .left img {
+.aboutpage #board-container .board-list-container ul.board-list.bio-active li.card .left img {
   width: 80px;
 }
 @media only screen and (min-width: 700px) {
-  .aboutpage .board-container .board-list-container ul.board-list.bio-active li.card .left img {
+  .aboutpage #board-container .board-list-container ul.board-list.bio-active li.card .left img {
     width: 100px;
   }
 }
 @media only screen and (min-width: 1000px) {
-  .aboutpage .board-container .board-list-container ul.board-list.bio-active li.card .left img {
+  .aboutpage #board-container .board-list-container ul.board-list.bio-active li.card .left img {
     width: 120px;
   }
 }
-.aboutpage .board-container .board-list-container ul.board-list.bio-active li.card .left .left-subtext {
+.aboutpage #board-container .board-list-container ul.board-list.bio-active li.card .left .left-subtext {
   display: flex;
   flex-direction: column;
 }
-.aboutpage .board-container .board-list-container ul.board-list.bio-active li.card .left .left-subtext h3 {
+.aboutpage #board-container .board-list-container ul.board-list.bio-active li.card .left .left-subtext h3 {
   margin: 5px 0 0 0;
   color: #0073A3;
   font-size: 11px;
   text-align: center;
 }
 @media only screen and (min-width: 700px) {
-  .aboutpage .board-container .board-list-container ul.board-list.bio-active li.card .left .left-subtext h3 {
+  .aboutpage #board-container .board-list-container ul.board-list.bio-active li.card .left .left-subtext h3 {
     font-size: 13px;
     margin: 8px 0 0 0;
   }
 }
 @media only screen and (min-width: 1000px) {
-  .aboutpage .board-container .board-list-container ul.board-list.bio-active li.card .left .left-subtext h3 {
+  .aboutpage #board-container .board-list-container ul.board-list.bio-active li.card .left .left-subtext h3 {
     font-size: 15px;
     margin: 10px 0 0 0;
   }
 }
-.aboutpage .board-container .board-list-container ul.board-list.bio-active li.card .left .left-subtext small {
-  font-size: 10px;
+.aboutpage #board-container .board-list-container ul.board-list.bio-active li.card .left .left-subtext small {
+  font-size: 11px;
   font-family: sans-serif;
   display: flex;
   justify-content: center;
@@ -2148,16 +2174,16 @@ body.fixed {
   display: inline-block;
 }
 @media only screen and (min-width: 700px) {
-  .aboutpage .board-container .board-list-container ul.board-list.bio-active li.card .left .left-subtext small {
-    font-size: 11px;
+  .aboutpage #board-container .board-list-container ul.board-list.bio-active li.card .left .left-subtext small {
+    font-size: 12px;
   }
 }
 @media only screen and (min-width: 1000px) {
-  .aboutpage .board-container .board-list-container ul.board-list.bio-active li.card .left .left-subtext small {
+  .aboutpage #board-container .board-list-container ul.board-list.bio-active li.card .left .left-subtext small {
     font-size: 13px;
   }
 }
-.aboutpage .board-container .board-list-container ul.board-list.bio-active li.card .right {
+.aboutpage #board-container .board-list-container ul.board-list.bio-active li.card .right {
   flex: 3;
   text-align: initial;
   display: flex;
@@ -2165,33 +2191,34 @@ body.fixed {
   justify-content: center;
   padding-left: 10px;
   padding-right: 10px;
-  border-left: 1px solid #eee;
+  border-left: none;
 }
 @media only screen and (min-width: 700px) {
-  .aboutpage .board-container .board-list-container ul.board-list.bio-active li.card .right {
+  .aboutpage #board-container .board-list-container ul.board-list.bio-active li.card .right {
+    border-left: 1px solid #eee;
     padding-left: 30px;
     padding-right: 30px;
   }
 }
 @media only screen and (min-width: 1000px) {
-  .aboutpage .board-container .board-list-container ul.board-list.bio-active li.card .right {
+  .aboutpage #board-container .board-list-container ul.board-list.bio-active li.card .right {
     padding-left: 40px;
     padding-right: 40px;
   }
 }
-.aboutpage .board-container .board-list-container ul.board-list.bio-active li.card .right p {
+.aboutpage #board-container .board-list-container ul.board-list.bio-active li.card .right p {
   display: flex;
   font-family: sans-serif;
-  font-size: 11px;
+  font-size: 13px;
 }
 @media only screen and (min-width: 700px) {
-  .aboutpage .board-container .board-list-container ul.board-list.bio-active li.card .right p {
-    font-size: 13px;
+  .aboutpage #board-container .board-list-container ul.board-list.bio-active li.card .right p {
+    font-size: 15px;
   }
 }
 @media only screen and (min-width: 1000px) {
-  .aboutpage .board-container .board-list-container ul.board-list.bio-active li.card .right p {
-    font-size: 15px;
+  .aboutpage #board-container .board-list-container ul.board-list.bio-active li.card .right p {
+    font-size: 16px;
   }
 }
 

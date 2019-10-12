@@ -81,7 +81,7 @@ get_header();
           ?>
         </div>
       </div>
-      <div class="board-container">
+      <div id="board-container">
         <div class="wp-block-cover board-hero">
           <?php
           foreach($team_header_array as $team_header) {
